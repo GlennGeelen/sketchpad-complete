@@ -1,0 +1,6 @@
+<div>
+  <%= form_for @conn, page_path(@conn, :signin), [as: :user], fn f -> %>
+    <%= text_input f, :username, placeholder: "username" %>
+    <%= submit f, value: "Sketch!" %>
+  <% end %>
+</div>
